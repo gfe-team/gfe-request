@@ -1,0 +1,7 @@
+{
+    "result": true,
+    "content": {
+        "msg": "hello axios"
+    },
+    "message": "error message"
+}
