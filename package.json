@@ -2,7 +2,7 @@
   "name": "@gfe/request",
   "version": "1.0.2",
   "private": false,
-  "description": "BPMN-Vue3 JSSDK",
+  "description": "axios http request",
   "main": "lib/index.min.js",
   "module": "lib/index.esm.js",
   "typings": "lib/index.d.ts",
