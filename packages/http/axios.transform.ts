@@ -19,8 +19,8 @@ export abstract class AxiosTransform {
   responseInterceptors?: (res: AxiosResponse<any>) => AxiosResponse<any>;
 
   // 请求之前的拦截器错误处理
-  requestInterceptorsCatch?: (error: Error, options?: CreateAxiosOptions) => void;
+  requestInterceptorsCatch?: (error: Error, options?: CreateAxiosOptions) => Error;
 
   // 请求之后的拦截器错误处理
-  responseInterceptorsCatch?: (error: Error, options?: CreateAxiosOptions) => void;
+  responseInterceptorsCatch?: (error: Error, options?: CreateAxiosOptions) => Error;
 }
