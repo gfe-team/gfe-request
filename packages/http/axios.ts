@@ -83,7 +83,7 @@ export class GAxios {
 
             this.axiosInstance.interceptors.request.use(undefined, err => {
 
-                requestInterceptorsCatch(err, this.options)
+                return requestInterceptorsCatch(err, this.options)
             });
         }
 
@@ -103,7 +103,7 @@ export class GAxios {
 
             this.axiosInstance.interceptors.response.use(undefined, (err: Error) => {
 
-                responseInterceptorsCatch(err, this.options);
+                return responseInterceptorsCatch(err, this.options);
             });
         }
     }
